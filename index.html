@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лотерея</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="images">
+        <img class="bird" src="static/bird.png" alt="" />
+        <img class="logo" src="static/1.png" alt="" />
+        <img class="fish" src="static/fish.png" alt="" />
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="krygi">
+        <div class="kryg"><img src="static/f1.png" alt="" /></div>
+        <div class="kryg"><img src="static/f2.png" alt="" /></div>
+        <div class="kryg"><img src="static/f3.png" alt="" /></div>
+        <div class="kryg"><img src="static/f4.png" alt="" /></div>
+        <div class="kryg"><img src="static/f5.png" alt="" /></div>
+        <div class="kryg"><img src="static/f6.png" alt="" /></div>
+      </div>
+      <div class="nums" id="output"></div>
+      <button
+        class="but"
+        onclick="randomElement(); this.disabled = true"
+      ></button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
